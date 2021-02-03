@@ -2,3 +2,13 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.msg-ok {
+    background-color: #3F51B5;
+    color: #FFF;
+}
+
+.msg-cancel {
+    background-color: #FFF;
+    color: #000000;
+}
