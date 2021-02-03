@@ -1,3 +1,4 @@
+import { HeaderService } from './../template/header/header.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,7 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StoreComponent implements OnInit {
 
-  constructor(private snackBar: MatSnackBar) { }
+  constructor(private snackBar: MatSnackBar, private headerService: HeaderService) {
+    headerService.headerData = {
+      title: 'Store Page',
+      icon: 'storefront',
+      routeUrl: '/products'
+    }
+  }
 
   ngOnInit(): void {
   }
